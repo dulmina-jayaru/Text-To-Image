@@ -21,7 +21,7 @@ def create_app():
         prompt = request.args.get('prompt', '')  
         # Set up our initial generation parameters.
         answers = stability_api.generate(
-            prompt="expansive landscape rolling greens with blue daisies and yggdrasil under a blue alien sky, masterful, ghibli",
+            prompt=prompt,
             seed=992446758,
             steps=50,
             cfg_scale=8.0,
