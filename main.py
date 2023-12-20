@@ -10,8 +10,8 @@ def create_app():
     app = Flask(__name__)
     # Set up our connection to the API.
     stability_api = client.StabilityInference(
-        key="sk-5yp9tp2hjPaf6Y9sepkYsEooHiWHWTP0Yp1WvNrKxHy4T8li",  # API Key reference.
-        verbose=True,  # Print debug messages.
+        key="API_KEY",  
+        verbose=True, 
         engine="stable-diffusion-xl-1024-v0-9",
     )
     
